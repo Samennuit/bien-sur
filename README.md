@@ -1,2 +1,2 @@
 # bien-sur
-Of couse
+Of course
