@@ -1,4 +1,4 @@
-# bien-sur
-Of course
+# projet-1
+Site Reservia
 
-Une succession d'évidences et autres platitudes sans intérêt mais qui, une fois rassemblées, éveillent la curiosité.
+Intégration HTML et CSS de la maquette du site Reservia.
