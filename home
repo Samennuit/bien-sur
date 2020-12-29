@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- En-tête de la page -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservia</title>
+    <body>
+      <header>
+        
+        <div class="container" width="auto">
+            <div class="logo"><img class="logo" src="images/logo/Reservialogo.png" alt="logo de Reservia"></div>
+            <div class="d4"><strong>S'inscrire</strong></div>
+            <div class="d3">Activités</div>
+            <div class="d2">Hébergements</div>
+        </div>
+        
+      </header>
+      <main>
+
+        <section>
+        <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p> En plein centre-ville ou en pleine nature</p>
+
+        <form method="post">
+          <p> 
+
+          <label for ="recherche"></label> <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="form-marseille" />
+          <input type="submit" value="Rechercher" id="rechercher" class="form-rechercher" />
+        </p>
+        </form>
+      </section>
+
+      <section>
+        <div class="filtres">
+        <h2>Filtres</h2>
+          <div id="economique">Économique</div>
+          <div id="familial">Familial</div>
+          <div id="romantique">Romantique</div>
+          <div id="animaux">Animaux autorisés</div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <br><br>
+      <p><img src="https://cdn.pixabay.com/photo/2013/07/13/13/21/information-160885_960_720.png" width="15px" alt="information" /> Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+      </section>
+
+      <section><div>
+        <h2 class="hebergements contenu">Hébergements à XXX</h2>
+  
+        <h2 class="populaires contenu">Les plus populaires</h2>
+      </div></section>
+
+       <section><div>
+        <h2 class="activites">Activités à XXX</h2>
+      </div></section>
+
+      </main>
+      <footer>
+        <div>
+        </div>
+
+      </footer>
+    </body>
+
+  </head>
+  </html>
