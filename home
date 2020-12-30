@@ -3,13 +3,15 @@
   <head>
     <!-- En-tête de la page -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/3183cf0972.js" crossorigin="anonymous"></script>
+
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
     <body>
       <header>
         
-        <div class="container" width="auto">
+        <div class="container1" width="auto">
             <div class="logo"><img class="logo" src="images/logo/Reservialogo.png" alt="logo de Reservia"></div>
             <div class="d4"><strong>S'inscrire</strong></div>
             <div class="d3">Activités</div>
@@ -19,7 +21,7 @@
       </header>
       <main>
 
-        <section>
+        <div>
         <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
         <p> En plein centre-ville ou en pleine nature</p>
 
@@ -27,37 +29,62 @@
           <p> 
 
           <label for ="recherche"></label> <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="form-marseille" />
-          <input type="submit" value="Rechercher" id="rechercher" class="form-rechercher" />
+          <input type="submit" value="Rechercher" id="rechercher" />
         </p>
         </form>
-      </section>
-
-      <section>
-        <div class="filtres">
-        <h2>Filtres</h2>
-          <div id="economique">Économique</div>
-          <div id="familial">Familial</div>
-          <div id="romantique">Romantique</div>
-          <div id="animaux">Animaux autorisés</div>
       </div>
-    </section>
 
-    <section>
-      <div>
+        <div class="filtres">
+        <h3 style="padding-bottom: 50px">Filtres</h2>
+          <div class="filtre">
+            <button id="economique">Économique</button>
+          </div>
+          <div class="filtre">
+            <button id="familial">Familial</button>
+          </div>
+          <div class="filtre">
+            <button id="romantique"> <i class="far fa-heart"></i> Romantique</button>
+          </div>
+          <div class="filtre">
+            <button id="animaux">Animaux autorisés</button>
+          </div>
+      </div>
+
+      <div class="information">
         <br><br>
       <p><img src="https://cdn.pixabay.com/photo/2013/07/13/13/21/information-160885_960_720.png" width="15px" alt="information" /> Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
-      </section>
+      </div>
 
-      <section><div>
-        <h2 class="hebergements contenu">Hébergements à XXX</h2>
+      <div class="contenu">
+          
+          <div class="hebergements" id="heb"><h2>Hébergements à XXX</h2>
+          <div id="item1">Un</div>
+          <div id="item2">Deux</div>
+          <div id="item3">Trois</div>
+          <div id="item4">Quatre</div>
+          <div id="item5">Cinq</div>
+          <div id="item6">Six</div>
+          <div id="item7"><p style="font-weight:700">Afficher plus</p></div>
+          <br>
+
+        </div>
+
   
-        <h2 class="populaires contenu">Les plus populaires</h2>
-      </div></section>
+        <div class="populaires" id="pop"><h2>Les plus populaires</h2>
+          <div id="item8">Huit</div>
+          <div id="item9">Neuf</div>
+          <div id="item10">Dix</div>
+      </div> </div>
 
-       <section><div>
-        <h2 class="activites">Activités à XXX</h2>
-      </div></section>
+      <div class="activites">
+          <h2 id="itema">Activités à XXX</h2>
+          <div id="itemb">B</div>
+          <div id="itemc">C</div>
+          <div id="itemd">D</div>
+          <div id="iteme">E</div>
+          <div id="itemf">F</div>
+          <div id="itemg">G</div>
+      </div>
 
       </main>
       <footer>
