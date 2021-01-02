@@ -4,38 +4,39 @@
     <!-- En-tête de la page -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/3183cf0972.js" crossorigin="anonymous"></script>
-
+    <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
+  </head>
     <body>
       <header>
-        
-        <div class="container1" width="auto">
-            <div class="logo"><img class="logo" src="images/logo/Reservialogo.png" alt="logo de Reservia"></div>
-            <div class="d4"><strong>S'inscrire</strong></div>
-            <div class="d3">Activités</div>
-            <div class="d2">Hébergements</div>
+        <div class="container1">
+            <div class="logo"><img class="logo" src="images/logo/Reservialogo.png" alt="logo de Reservia" /></div>
+            <nav>
+              <div class="d2 active"><a href="#heb">Hébergements</a></div>
+              <div class="d3 inactive"><a href="#act">Activités</a></div>
+            </nav>
+            <div class="inscrire"><a href="#" target="_blank">S'inscrire</a></div>
+
         </div>
-        
       </header>
       <main>
 
-        <div>
-        <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p> En plein centre-ville ou en pleine nature</p>
+        <div class="chapo">
+          <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p> En plein centre-ville ou en pleine nature</p>
 
-        <form method="post">
-          <p> 
-
-          <label for ="recherche"></label> <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="form-marseille" />
-          <input type="submit" value="Rechercher" id="rechercher" />
-        </p>
-        </form>
-      </div>
+          <form method="post">
+            <p> 
+            <label for="chercher"></label> <input type="search" name="cherche" id="chercher" placeholder="Marseille, France" class="form-marseille" />
+            <input type="submit" value="Rechercher" id="rechercher" />
+            </p>
+          </form>
+        </div>
 
         <div class="filtres">
-        <h3 style="padding-bottom: 50px">Filtres</h2>
+          <h3>Filtres</h3>
           <div class="filtre">
             <button id="economique">Économique</button>
           </div>
@@ -43,56 +44,172 @@
             <button id="familial">Familial</button>
           </div>
           <div class="filtre">
-            <button id="romantique"> <i class="far fa-heart"></i> Romantique</button>
+            <button id="romantique"><i class="far fa-heart"></i> Romantique</button>
           </div>
           <div class="filtre">
             <button id="animaux">Animaux autorisés</button>
           </div>
-      </div>
-
-      <div class="information">
-        <br><br>
-      <p><img src="https://cdn.pixabay.com/photo/2013/07/13/13/21/information-160885_960_720.png" width="15px" alt="information" /> Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
-
-      <div class="contenu">
-          
-          <div class="hebergements" id="heb"><h2>Hébergements à XXX</h2>
-          <div id="item1">Un</div>
-          <div id="item2">Deux</div>
-          <div id="item3">Trois</div>
-          <div id="item4">Quatre</div>
-          <div id="item5">Cinq</div>
-          <div id="item6">Six</div>
-          <div id="item7"><p style="font-weight:700">Afficher plus</p></div>
-          <br>
-
         </div>
 
-  
-        <div class="populaires" id="pop"><h2>Les plus populaires</h2>
-          <div id="item8">Huit</div>
-          <div id="item9">Neuf</div>
-          <div id="item10">Dix</div>
-      </div> </div>
+        <div class="information">
+          <!-- Sans cela, le paragraphe suivant ne see cale pas fer à gauche. -->
+          <p><img src="https://cdn.pixabay.com/photo/2013/07/13/13/21/information-160885_960_720.png" width="15" alt="information" /> Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
 
-      <div class="activites">
-          <h2 id="itema">Activités à XXX</h2>
-          <div id="itemb">B</div>
-          <div id="itemc">C</div>
-          <div id="itemd">D</div>
-          <div id="iteme">E</div>
-          <div id="itemf">F</div>
-          <div id="itemg">G</div>
-      </div>
+        <div class="contenu">
+          <div class="hebergements" id="heb"><h2>Hébergements à XXX</h2>
+            <div id="item1"> 
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;" />
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item2">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item3">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item4">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>            
+            <div id="item5">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item6">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item7">
+              <p style="font-weight:700"><a href="#" target="_blank">Afficher plus</a></p></div>
+          </div>
+
+          <div class="populaires" id="pop"><h2>Les plus populaires</h2>
+            <div id="item8">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item9">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+            <div id="item10">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p>
+              <p class="texte-carte">Nuit à partir de <b>25 €</b></p></div>
+          </div>
+        </div>
+
+        <div class="activites">
+          <h2 id="act">Activités à XXX</h2>
+          <div id="itemb">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+          <div id="itemc">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+          <div id="itemd">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+          <div id="iteme">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+          <div id="itemf">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+          <div id="itemg">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/la-cane-marcus-loke-XL.jpg">
+                <source media="(max-width:300px)" srcset="limages/a-cane-marcus-loke-moyen.jpg">
+                <img src="images/la-cane-marcus-loke-moyen.jpg" alt="Hôtel sur la Canebière" style="max-width:100%;">
+              </picture>
+              <p class="titre-carte">Auberge La Canebière</p></div>
+        </div>
 
       </main>
+
       <footer>
-        <div>
+        <div class="about">
+          <ul>
+           <li><h4>À propos</h4></li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+          </ul>
+        </div>
+        <div class="housing">
+          <ul>
+            <li><h4>Nos hébergements</h4></li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+          </ul>
+        </div>
+        <div class="help">
+          <ul>
+            <li><h4>Assistance</h4></li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+          </ul>
         </div>
 
       </footer>
     </body>
-
-  </head>
   </html>
